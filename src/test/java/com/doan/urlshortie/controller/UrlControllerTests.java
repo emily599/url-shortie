@@ -25,7 +25,7 @@ class UrlControllerTests {
         final ResponseEntity idResponseFromUrl = urlController.createIdFromUrl(URL);
 
         assertEquals(HttpStatus.OK, idResponseFromUrl.getStatusCode());
-        assertEquals(ID, idResponseFromUrl.getBody());
+        assertEquals("Shortened URL:" + ID, idResponseFromUrl.getBody());
     }
 
     @Test
