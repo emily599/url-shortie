@@ -35,7 +35,7 @@ public class UrlController {
         final UrlObject newUrlObject = UrlObject.createIdFromUrl(url);
         log.info("The URL id is {}", newUrlObject);
         redisTemplate.opsForValue().set(newUrlObject.getId(), newUrlObject, ttl, TimeUnit.SECONDS);
-        return ResponseEntity.ok(newUrlObject.getId());
+        return ResponseEntity.ok("Shortened URL:" + newUrlObject.getId());
     }
 
     @GetMapping(value = "/{id}")
