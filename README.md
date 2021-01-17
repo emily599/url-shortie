@@ -63,7 +63,6 @@ Here is an example with ID `d3cccd90`:
 
 ![getUrlFromId](images/getUrlFromId.png?raw=true)
 
-
 ## Running the tests 🧪
 
 At the root of the directory, run:
